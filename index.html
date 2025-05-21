@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="transition duration-300">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kiran Chauhan - Portfolio, Education, Goals, Achievements" />
+  <meta name="author" content="Kiran Chauhan" />
+  <title>Kiran Chauhan | Portfolio</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition duration-300">
+
+  <!-- Loader -->
+  <div id="loader" class="fixed inset-0 bg-white dark:bg-gray-900 z-50 flex items-center justify-center">
+    <div class="w-12 h-12 border-4 border-green-600 border-t-transparent rounded-full animate-spin"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-green-600 text-white text-center py-10 px-4 relative">
+    <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+    <p class="mt-2">Hi, I'm Kiran Chauhan, a Computer Engineering student from Bhiwandi.</p>
+    <button id="darkToggle" class="absolute top-4 right-4 bg-white dark:bg-gray-700 text-green-600 dark:text-white px-3 py-1 rounded shadow hover:bg-gray-200 dark:hover:bg-gray-600 transition">
+      Toggle Dark Mode
+    </button>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 dark:bg-gray-700 text-white">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <div class="text-xl font-semibold">Menu</div>
+      <div class="space-x-6">
+        <button class="tab-btn" data-target="about">About</button>
+        <button class="tab-btn" data-target="video">Video</button>
+        <button class="tab-btn" data-target="achievements">Achievements</button>
+        <button class="tab-btn" data-target="goals">Goals</button>
+        <button class="tab-btn" data-target="personal">Personal</button>
+        <button class="tab-btn" data-target="location">Location</button>
+        <button class="tab-btn" data-target="contact">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+  <section id="about" class="tab-section block bg-white dark:bg-gray-800 p-6 mt-4 rounded-lg shadow-md mx-4">
+    <h2 class="text-2xl font-bold mb-2">About Me</h2>
+    <img src="photo.jpeg" alt="Kiran Chauhan" class="w-32 h-32 rounded-full mx-auto my-4">
+    <p><strong>Name:</strong> Kiran Chauhan</p>
+    <p><strong>Location:</strong> Bhiwandi</p>
+    <p><strong>Education:</strong> Computer Engineering</p>
+    <p><strong>Languages:</strong> C, C++, Python, SQL</p>
+  </section>
+
+  <section id="video" class="tab-section hidden bg-gray-200 dark:bg-gray-700 p-6 my-4 rounded-lg mx-4">
+    <h2 class="text-2xl font-bold mb-2">Inspirational Video</h2>
+    <iframe class="w-full h-64 rounded-lg"
+      src="https://www.youtube.com/embed/iuQ3zyKq-JY"
+      title="Motivational Video by Muniba Mazari"
+      allowfullscreen></iframe>
+  </section>
+
+  <section id="achievements" class="tab-section hidden bg-white dark:bg-gray-800 p-6 my-4 rounded-lg shadow-md mx-4">
+    <h2 class="text-2xl font-bold mb-2">Achievements</h2>
+    <ul class="list-disc ml-6">
+      <li>3rd prize in Standard Presentation (BIS)</li>
+      <li>Completed a short AR/VR course</li>
+      <li>Internships at Eduskill & Infosys</li>
+    </ul>
+  </section>
+
+  <section id="goals" class="tab-section hidden bg-gray-200 dark:bg-gray-700 p-6 my-4 rounded-lg mx-4">
+    <h2 class="text-2xl font-bold mb-2">Future Goals</h2>
+    <p>I want to become an Android Developer and build innovative mobile applications.</p>
+  </section>
+
+  <section id="personal" class="tab-section hidden bg-white dark:bg-gray-800 p-6 my-4 rounded-lg shadow-md mx-4">
+    <h2 class="text-2xl font-bold mb-2">Personal Side</h2>
+    <p><strong>Hobbies:</strong> Learning new things</p>
+    <p><strong>Role Model:</strong> None</p>
+    <p><strong>Favorite Book:</strong> Believe in Yourself</p>
+    <p><strong>Favorite Website:</strong> <a href="https://google.com" target="_blank" class="text-blue-600 dark:text-blue-400 underline">Google</a></p>
+    <p><strong>Volunteering:</strong> Participated in NSS activities</p>
+  </section>
+
+  <section id="location" class="tab-section hidden bg-gray-200 dark:bg-gray-700 p-6 my-4 rounded-lg mx-4">
+    <h2 class="text-2xl font-bold mb-2">My Location</h2>
+    <p>I live in Bhiwandi, Maharashtra.</p>
+    <iframe class="w-full h-64 mt-4 rounded-md shadow"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60345.35464231995!2d73.0150499!3d19.2962515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be794db45d25cfd%3A0x48cc8f263a017f17!2sBhiwandi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1684597780674!5m2!1sen!2sin"
+      allowfullscreen="" loading="lazy" style="border:0;"></iframe>
+  </section>
+
+  <section id="contact" class="tab-section hidden bg-white dark:bg-gray-800 p-6 my-4 rounded-lg shadow-md mx-4 mb-6">
+    <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+    <p class="mb-4">I'd love to hear from you! Fill out the form below:</p>
+    <form id="contactForm" class="space-y-4">
+      <div>
+        <label for="name" class="block font-semibold">Name</label>
+        <input type="text" id="name" name="name" required class="w-full mt-1 p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-900 focus:ring-2 focus:ring-green-500" />
+      </div>
+      <div>
+        <label for="email" class="block font-semibold">Email</label>
+        <input type="email" id="email" name="email" required class="w-full mt-1 p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-900 focus:ring-2 focus:ring-green-500" />
+        <p id="emailError" class="text-red-500 text-sm hidden">Please enter a valid email address.</p>
+      </div>
+      <div>
+        <label for="message" class="block font-semibold">Message</label>
+        <textarea id="message" name="message" rows="4" required class="w-full mt-1 p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-900 focus:ring-2 focus:ring-green-500"></textarea>
+      </div>
+      <div>
+        <p><i class="fa-solid fa-phone"></i><strong> : </strong> +91-7777777777</p>
+        <p><i class="fa-brands fa-linkedin"></i><strong> : </strong> <a href="https://linkedin.com/in/Kiran Chauhan" class="text-blue-600 dark:text-blue-400 underline" target="_blank">linkedin.com/in/kiran-chauhan</a></p>
+        <p><i class="fa-brands fa-github"></i><strong> : </strong> <a href="https://github.com/12-Kiran-Chauhan" class="text-blue-600 dark:text-blue-400 underline" target="_blank">github.com/kiranchauhan</a></p>
+      </div>
+      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">Send Message</button>
+    </form>
+    <p id="formSuccess" class="text-green-600 mt-4 hidden">Thank you! Your message has been sent.</p>
+  </section>
+
+  <!-- Scroll to Top -->
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-6 bg-green-600 text-white p-3 rounded-full shadow hover:bg-green-700 transition">↑</button>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 dark:bg-gray-700 text-white text-center py-4">
+    &copy; 2025 Kiran Chauhan. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Hide loader after page load
+    window.addEventListener("load", () => {
+      document.getElementById("loader").style.display = "none";
+    });
+
+    // Tab navigation
+    const buttons = document.querySelectorAll(".tab-btn");
+    const sections = document.querySelectorAll(".tab-section");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const target = button.dataset.target;
+        sections.forEach(section => section.classList.add("hidden"));
+        document.getElementById(target).classList.remove("hidden");
+      });
+    });
+
+    // Form validation
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const emailError = document.getElementById("emailError");
+      const successMsg = document.getElementById("formSuccess");
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        emailError.classList.remove("hidden");
+        successMsg.classList.add("hidden");
+        return;
+      }
+      emailError.classList.add("hidden");
+      successMsg.classList.remove("hidden");
+      this.reset();
+    });
+
+    // Dark mode toggle
+    document.getElementById("darkToggle").addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>
